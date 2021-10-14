@@ -12,7 +12,7 @@ class FooterComponent extends Component {
     render() {
         return (
             <div>
-                <footer className="footer">
+                <footer className="footer mt-2 text-center">
                     <span className="text-muted">start react app 2021</span>
                 </footer>
             </div>

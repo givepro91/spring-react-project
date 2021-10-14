@@ -4,6 +4,7 @@ import ListBoardComponent from './components/ListBoardComponent';
 import HeaderComponent from './components/HeaderComponent'
 import FooterComponent from "./components/FooterComponent";
 import CreateBoardComponent from './components/CreateBoardComponent';
+import ReadBoardComponent from './components/ReadBoardComponent';
 
 function App() {
     return (
@@ -14,7 +15,8 @@ function App() {
                         <Switch>
                             <Route path="/" exact component={ListBoardComponent}/>
                             <Route path="/board" component={ListBoardComponent}/>
-                            <Route path="/create-board" component={CreateBoardComponent}/>
+                            <Route path="/create-board/:id" component={CreateBoardComponent}/>
+                            <Route path="/read-board/:id" component={ReadBoardComponent} />
                         </Switch>
                     </div>
                 <FooterComponent/>
